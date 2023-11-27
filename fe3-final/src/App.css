@@ -1,0 +1,94 @@
+#root {
+  width: 100vw;
+  min-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  align-self: start;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+/********************************* Navbar ******************************/
+
+nav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+
+nav .routes{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+nav h3{
+  margin-left: 2rem;
+  border-style: inset;
+  padding: .1rem .4rem;
+  cursor: default;
+  color: white;
+}
+
+nav button{
+  background-color:yellow;
+  border-color: black;
+  color: white;
+  padding: .5rem .8rem;
+}
+
+nav button:hover{
+  background-color: rgb(205, 205, 0);
+}
+
+
+/********************************* Footer ******************************/
+
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  color: black;
+  position: relative;
+  justify-content: center;
+}
+
+.devs{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+}
+
+.devs p{
+  margin: 0;
+}
+
+.devs h5{
+  margin: .5rem 0 0;
+  font-weight: 400;
+}
+
+.icons{
+  position: absolute;
+  display: flex;
+  right: 5%;
+}
+
+.icons a{
+  margin-left: 1rem;
+  color: black;
+}
+
+.icons a:hover{
+  color: rgb(255, 0, 0);
+}
