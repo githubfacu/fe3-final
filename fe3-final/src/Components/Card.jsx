@@ -18,24 +18,25 @@ const Card = ({ name, username, id }) => {
     localStorage.setItem(`user${id}`, JSON.stringify(userPayload))
     Swal.fire({
       title: `${name} is added to favorites`,
-      background: 'rgba(24, 24, 24, .9)'
+      background: 'rgba(24, 24, 24, .9)',
+      color: 'grey',
+      confirmButtonColor:'black',
     })
   }
 
   const removeFav = ()=>{
     Swal.fire({
       background: 'rgba(24, 24, 24, .9)',
-      title: `${name} remove from favorites?`,
-      icon: 'warning',
-      confirmButtonColor: '#646cff', 
-      confirmButtonText: 'Yes, delete it!'
+      title: `Remove ${name} from favorites?`,
+      color: 'grey',
+      confirmButtonColor: 'black', 
+      confirmButtonText: 'Yes!'
     }).then((result) => {
       if (result.isConfirmed) {
         localStorage.removeItem(`user${id}`)
         window.location.replace('/favs')        
       }
     })
-
   }
 
   return (

@@ -18,7 +18,7 @@ const Detail = () => {
 
   return (
     <div style={{height: '100vh'}}>
-      <h1>Psycho {params.id}</h1>
+      <h1>Official {params.id}</h1>
       <div className='detail'>
         <ul>
           <li>

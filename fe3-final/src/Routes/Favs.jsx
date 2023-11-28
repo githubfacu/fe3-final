@@ -18,7 +18,7 @@ const Favs = () => {
   return (
     <>
       <h1>Psycho Favs</h1>
-      <div className="card-grid">
+      <div className="card-grid" style={{minHeight: '50vh'}}>
         {user1 && < Card key={user1.id} name={user1.name} username={user1.username} id={user1.id}/>}
         {user2 && < Card key={user2.id} name={user2.name} username={user2.username} id={user2.id}/>}
         {user3 && < Card key={user3.id} name={user3.name} username={user3.username} id={user3.id}/>}

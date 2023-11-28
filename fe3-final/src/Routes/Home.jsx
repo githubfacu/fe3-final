@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
       <main className="main">
-        <h1>Home</h1>
+        <h1>Criminal Investigation Department</h1>
         <div className='card-grid'>
           {psychoList.map(psycho => <Card key={psycho.id} name={psycho.name} username={psycho.username} id={psycho.id}/>)}
         </div>

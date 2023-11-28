@@ -6,6 +6,7 @@
 
 h1{
     margin: 3.5rem 0 4rem;
+    cursor: default;
 }
 
 .card-grid{
@@ -71,4 +72,12 @@ h1{
     color: white;
     margin: 0 .1rem;
     border-radius: 5px;
+}
+
+.favButton{
+    background: linear-gradient(90deg, rgb(10, 15, 105) 0%,  rgb(6, 17, 75) 50%, rgb(3, 17, 46) 70%, rgb(1, 7, 28) 100%);
+}
+
+.favButton:hover{
+    background: linear-gradient(90deg, rgb(8, 40, 198) 0%,  rgb(19, 44, 167) 60%, rgb(9, 29, 83) 80%, rgb(3, 12, 41) 100%);
 }

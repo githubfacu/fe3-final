@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #cdcfff;
+  color: #d6d7ff;
   text-decoration: inherit;
 }
 a:hover {
@@ -39,19 +39,19 @@ h1 {
 
 button {
   border-radius: 3px;
-  border: 3px solid #3a41c0;
+  border: 3px solid rgb(3, 12, 41);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #04062f;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #141976;
-  background-color: #646cff;
+  border-color: rgb(10, 24, 101);
+  background-color: #101796;
 }
 
 @media (prefers-color-scheme: light) {
@@ -63,6 +63,6 @@ button:hover {
     color: #ffffff;
   }
   button {
-    background-color: #070931;
+    background-color: #04062f;
   }
 }

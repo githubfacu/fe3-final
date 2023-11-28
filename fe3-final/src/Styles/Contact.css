@@ -27,6 +27,7 @@ h2{
     padding: .2rem;
     margin-bottom: .3rem;
     border: 2px solid black;
+    background-color: white;
 }
 
 .contact-form button{
