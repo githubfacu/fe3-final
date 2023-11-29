@@ -17,9 +17,9 @@ const Detail = () => {
   },[])
 
   return (
-    <div style={{height: '100vh'}}>
+    <div style={{height: '100vh'}} className='detail'>
       <h1>Official {params.id}</h1>
-      <div className='detail'>
+      <div>
         <ul>
           <li>
             <p>NAME</p>

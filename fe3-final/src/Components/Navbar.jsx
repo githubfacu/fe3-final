@@ -1,6 +1,6 @@
 import React , { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import ThemeContext , { themes } from '../Context/ThemeContext'
+import ThemeContext from '../Context/ThemeContext'
 
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     
       <nav style={{backgroundImage: `url('../../images/HD-wallpaper-psycho-pass.jpg')`, color:theme.font}}>
-        <h3>PSYCHO - PASS</h3>
+        <h3 style={{color:'white'}}>PSYCHO_PASS</h3>
         <div className='routes'>
           <Link to='/'>Home</Link>
           <Link to='/contact'>Contact</Link>

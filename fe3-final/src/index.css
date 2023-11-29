@@ -1,5 +1,19 @@
+@font-face{
+  font-family: 'MiFuente';
+  src: url('./fonts/Blacklisted.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'FuenteAmarur';
+  src: url('./fonts/amarurgt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'FuenteAmarur', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,30 +30,32 @@
 
 a {
   font-weight: 500;
-  color: #d6d7ff;
+  color: white;
   text-decoration: inherit;
 }
 a:hover {
-  color: #ffffff;
-  transform: scale(1.03);
+  color: white;
+  transform: scale(1.05);
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
+  font-size: 16px;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3rem;
   line-height: 1.1;
+  font-family: 'MiFuente';
 }
 
 button {
   border-radius: 3px;
-  border: 3px solid rgb(3, 12, 41);
+  border: 3px solid rgb(28, 1, 1);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -50,8 +66,8 @@ button {
 }
 
 button:hover {
-  border-color: rgb(10, 24, 101);
-  background-color: #101796;
+  border-color: rgb(28, 1, 1);
+  background-color: rgb(134, 5, 5);
 }
 
 @media (prefers-color-scheme: light) {
@@ -60,7 +76,7 @@ button:hover {
     background-color: #ffffff;
   }
   a:hover {
-    color: #ffffff;
+    color: white;
   }
   button {
     background-color: #04062f;

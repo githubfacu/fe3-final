@@ -3,11 +3,13 @@ import {createContext} from 'react'
 export const themes = {
     light: {
         font: 'black',
-        background: 'white'
+        background: 'white',  
+        backgroundImage: `url('../../public/images/psy-pers2.png')`
     },
     dark: {
         font: 'white',
-        background: 'rgb(12, 12, 12)'
+        background: 'rgb(12, 12, 12)',
+        backgroundImage: `url('../../public/images/backgroundc10.png')`
     }
 }
 

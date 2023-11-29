@@ -21,6 +21,7 @@ nav{
   width: 100%;
   justify-content: space-between;
   padding: .5rem 0;
+  position: relative;
 }
 
 nav .routes{
@@ -28,22 +29,29 @@ nav .routes{
   align-items: center;
   justify-content: space-around;
   width: 30%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 nav h3{
-  margin-left: 2rem;
-  border-style: inset;
+  margin: 2rem 2rem .15rem ;
   padding: .1rem .4rem;
+  font-size: 1.5rem;
   cursor: default;
-  color: white;
+}
+
+.routes a{
+  color: white;  
+}
+
+.routes a:hover{
+  transform: scale(1.1);
 }
 
 nav button{
   background-color:yellow;
   border-color: black;
-  color: white;
   padding: .5rem .8rem;
+  font-size: 1.3rem;
 }
 
 nav button:hover{

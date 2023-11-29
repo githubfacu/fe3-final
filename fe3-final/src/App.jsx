@@ -12,22 +12,20 @@ import React , { useEffect, useState } from 'react'
 
 function App() {
 
-
-  const [theme, setTheme] = useState(themes.dark)
-
   let them = themes.dark
+
+  const [theme, setTheme] = useState(them)
 
   useEffect((them)=>{
     sessionStorage.getItem('theme') === 'themes.light' ? them = themes.light : them = themes.dark
     setTheme(them)
   },[])
 
-
   const handleChangeTheme = () => {
     if (theme === themes.light){
       setTheme(themes.dark)
-      sessionStorage.setItem('theme', 'themes.dark')      
-    } 
+      sessionStorage.setItem('theme', 'themes.dark')    
+    }
     if (theme === themes.dark){
       setTheme(themes.light)
       sessionStorage.setItem('theme', 'themes.light')  
@@ -36,7 +34,7 @@ function App() {
 
   return (
     <Themecontext.Provider value={{theme, handleChangeTheme}}>
-      <div className="App" style={{background: theme.background, color:theme.font}}>
+      <div className="App" style={{background: theme.background, backgroundImage: theme.backgroundImage, color:theme.font}}>
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>}/>

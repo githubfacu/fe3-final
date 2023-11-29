@@ -13,7 +13,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 250px;
+    width: 270px;
     margin-top: 2rem;
 }
 
@@ -42,4 +42,8 @@ h2{
 
 .contact-form h4{
     margin-top: 0;
+}
+
+.contact-form h5{
+    font-size: .9rem;
 }
