@@ -49,14 +49,14 @@ nav h3{
 }
 
 nav button{
-  background-color:yellow;
+  background-color:rgb(255, 240, 0);
   border-color: black;
   padding: .5rem .8rem;
   font-size: 1.3rem;
 }
 
 nav button:hover{
-  background-color: rgb(205, 205, 0);
+  background-color: rgba(246, 230, 4, 0.9)
 }
 
 

@@ -32,9 +32,18 @@ function App() {
     } 
   }
 
+  const setBackground = () => {
+    if (theme === themes.light){
+      return `url('../../images/psy-pers2.png')`
+    }
+    if (theme === themes.dark){
+      return `url('../../images/backgroundc10.png')`
+    }
+  }
+
   return (
     <Themecontext.Provider value={{theme, handleChangeTheme}}>
-      <div className="App" style={{background: theme.background, backgroundImage: theme.backgroundImage,backgroundSize:theme.backgroundSize , color:theme.font}}>
+      <div className="App" style={{background: theme.background, backgroundImage: setBackground(), backgroundSize:theme.backgroundSize , color:theme.font}}>
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>}/>
