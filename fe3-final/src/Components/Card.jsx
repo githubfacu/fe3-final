@@ -50,7 +50,7 @@ const Card = ({ name, username, id }) => {
         </Link>
 
         {window.location.pathname === '/' ? <button onClick={addFav} className="favButton">⭐
-        </button> : <button onClick={removeFav} className="favButton">&#128148;
+        </button> : <button onClick={removeFav} className="favButton">💔
         </button>}
 
     </div>

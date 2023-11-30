@@ -22,14 +22,16 @@ h1{
 .card{
     display: flex;
     flex-direction: column;
+    max-height: 430px;
     border-radius: 3px;
-    background-color: rgb(12, 12, 12);
+/*    background-color: rgb(12, 12, 12);*/
     padding: .5rem;
     margin-bottom: 2rem;
 
-    box-shadow: 0 0 8px 1px rgb(179, 0, 255);
-    box-shadow: 0 0 8px 0px rgb(224, 0, 0);    
+/*    box-shadow: 0 0 8px 1px rgb(179, 0, 255); */
+    box-shadow: 0 0 8px 0px rgb(224, 0, 0);
 
+    background: linear-gradient(90deg, rgb(78, 78, 78) 0%, rgb(54, 54, 54)10%, rgb(41, 41, 41) 20%, rgb(23, 23, 23) 40%, rgb(12, 12, 12) 100%);
 
 }
 

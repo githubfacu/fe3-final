@@ -34,7 +34,7 @@ function App() {
 
   return (
     <Themecontext.Provider value={{theme, handleChangeTheme}}>
-      <div className="App" style={{background: theme.background, backgroundImage: theme.backgroundImage, color:theme.font}}>
+      <div className="App" style={{background: theme.background, backgroundImage: theme.backgroundImage,backgroundSize:theme.backgroundSize , color:theme.font}}>
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>}/>

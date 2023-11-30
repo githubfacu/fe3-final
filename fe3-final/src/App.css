@@ -1,6 +1,7 @@
 #root {
   width: 100vw;
   min-width: 1280px;
+  max-width: 2000px;
   margin: 0 auto;
   text-align: center;
   align-self: start;

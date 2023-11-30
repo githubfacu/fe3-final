@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link to='/contact'>Contact</Link>
           <Link to='/favs'>Favs</Link>
           <button onClick={handleChangeTheme}>
-            &#128268;
+            🔌
           </button>        
         </div>
       </nav>

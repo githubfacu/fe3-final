@@ -30,7 +30,7 @@ const Form = () => {
     <div className="contact-form">
       {!show && 
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Full Name" value={user.fullName} onChange={(event) => setUser({...user, fullName: event.target.value})}/>
+          <input type="text" placeholder="Full-Name" value={user.fullName} onChange={(event) => setUser({...user, fullName: event.target.value.trim()})}/>
           <input type="text" placeholder="Email" value={user.email} onChange={(event) => setUser({...user, email: event.target.value.trim()})}/>
           <button style={{background: theme.font, color: theme.background}}>Send</button>
         </form>}
