@@ -8,7 +8,6 @@ const Navbar = () => {
   const {theme, handleChangeTheme} = useContext(ThemeContext)
 
 
-
   return (
     
       <nav style={{backgroundImage: `url('../../images/HD-wallpaper-psycho-pass.jpg')`, color:theme.font}}>
